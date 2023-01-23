@@ -21,6 +21,6 @@ $(LEX_C): $(LEX_SRC) $(YACC_H)
 $(YACC_C) $(YACC_H): $(YACC_SRC)
 	bison -d $^
 
-.PHONY
+.PHONY: clean
 clean:
 	rm -f $(TARGET) $(LEX_C) $(YACC_C) $(YACC_H)
