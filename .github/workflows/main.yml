@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: sudo apt-get update
-    - run: sudo apt-get install -y flex bison libbison-dev
+    - run: sudo apt-get install -y flex libfl-dev bison libbison-dev
     - run: make
